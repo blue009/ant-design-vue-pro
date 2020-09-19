@@ -1,3 +1,7 @@
 module.exports = {
-  presets: ["@vue/cli-plugin-babel/preset"]
+  presets: ["@vue/app"],
+  "plugins": [
+    ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
+    // ["import", { "libraryName": "antd", "libraryDirectory": "lib", "style": "css" }] // `style: true` 会加载 less 文件
+  ]
 };
